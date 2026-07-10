@@ -1,5 +1,3 @@
-import sys
-
 WALL_SIZE = 100
 
 def part1(movements : tuple[int]):
