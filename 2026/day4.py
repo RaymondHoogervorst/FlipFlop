@@ -1,4 +1,4 @@
-import sys, itertools, typing, operator
+import sys, typing
 
 def parse_flower():
     lines = tuple(map(str.strip, sys.stdin.readlines()))[3:-1]
