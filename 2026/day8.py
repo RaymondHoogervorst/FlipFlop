@@ -14,7 +14,7 @@ def part1(evolutions : tuple[str]):
         return sum(count_evolutions(child, k-1) for child in evolution_map.get(c, (c,)))
     return count_evolutions('A', 7) + count_evolutions('B', 7)
 
-def part2(evolutions : tuple[str], k = 7):
+def part2(evolutions : tuple[tuple[str]], k = 7):
     evolution_map : dict[str, tuple[str]] = {}
     for lhs, rhs, *children in evolutions:
         evolution_map.setdefault((lhs, rhs), children)
