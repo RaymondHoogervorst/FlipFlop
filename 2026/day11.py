@@ -1,4 +1,4 @@
-import sys, itertools, re, bisect, os, time
+import sys, itertools, re, bisect
 
 class DnaRule:
     def __init__(self, top : str, left : str, right : str):
